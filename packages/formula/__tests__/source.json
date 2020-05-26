@@ -1,0 +1,13 @@
+{
+  "aaa": {
+    "value": 1,
+    "label": "AAA"
+  },
+  "bbb": {
+    "label": "BBB"
+  },
+  "ccc": {
+    "label": "CCCCC"
+  },
+  "aaa.preset": {}
+}

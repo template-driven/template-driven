@@ -1,0 +1,37 @@
+{
+  "aaa": {
+    "value": {
+      "type": "arithmetic",
+      "formula": "bbb.value *9",
+      "args": ["bbb.value"]
+    },
+    "preset": {
+      "type": "arithmetic",
+      "formula": "[bbb.value, ccc.value, 1,2]",
+      "args": ["bbb.value", "ccc.value"]
+    },
+    "label": "AAA",
+    "other": {
+      "a": [1, 2, 3, 4],
+      "x": "data",
+      "k": false
+    }
+  },
+
+  "bbb": {
+    "label": {
+      "type": "arithmetic",
+      "formula": "ccc.label+`<BBB>`",
+      "args": ["ccc.label"]
+    },
+    "value": {
+      "type": "arithmetic",
+      "formula": "SUM([1,2,3,4,ccc.value])",
+      "args": ["ccc.value"]
+    }
+  },
+  "ccc": {
+    "label": "CCCC",
+    "value": 123
+  }
+}

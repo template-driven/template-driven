@@ -1,0 +1,71 @@
+{
+  "name": "@template-driven/form",
+  "version": "0.0.0",
+  "description": "React Form Creator Power by MobX",
+  "sideEffects": false,
+  "author": "nanyuantingfeng <nanyuantingfeng@aliyun.com>",
+  "homepage": "https://github.com/template-driven/template-driven#readme",
+  "license": "MIT",
+  "main": "dist/lib/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/types/index.d.ts",
+  "directories": {
+    "lib": "lib",
+    "test": "__tests__"
+  },
+  "publishConfig": {
+    "registry": "https://registry.npm.taobao.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/template-driven/template-driven.git"
+  },
+  "scripts": {
+    "build": "rm -rf dist && npm run optimize",
+    "optimize": "npm run build:lib && npm run build:esm && npm run build:types",
+    "build:lib": "tsc --rootDir src --outDir dist/lib --module commonjs",
+    "build:esm": "tsc --rootDir src --outDir dist/esm --module esnext",
+    "build:types": "tsc --rootDir src --outDir dist/types --emitDeclarationOnly --declaration"
+  },
+  "bugs": {
+    "url": "https://github.com/template-driven/template-driven/issues"
+  },
+  "resolutions": {
+    "babel-core": "^7.0.0-bridge.0"
+  },
+  "devDependencies": {
+    "@types/enzyme": "^3.10.5",
+    "@types/enzyme-adapter-react-16": "^1.0.6",
+    "@types/jest": "^25.2.3",
+    "@types/react": "^16.9.35",
+    "@types/react-dom": "^16.9.8",
+    "antd": "^4.2.5",
+    "dom-scroll-into-view": "^2.0.1",
+    "enzyme": "^3.11.0",
+    "enzyme-adapter-react-16": "^1.15.2",
+    "enzyme-to-json": "^3.4.4",
+    "hollow-cli": "^3.0.3",
+    "jest": "^26.0.1",
+    "jsdom": "^16.2.2",
+    "prettier": "^2",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-test-renderer": "^16.13.1",
+    "ts-jest": "^26.0.0",
+    "typescript": "^3.9.3"
+  },
+  "peerDependencies": {
+    "react": ">=16.13"
+  },
+  "dependencies": {
+    "@types/hoist-non-react-statics": "^3",
+    "@types/lodash": "^4",
+    "async-validator": "^3.3",
+    "hoist-non-react-statics": "^3",
+    "mobx": "^5",
+    "lodash": "^4",
+    "mobx-react": "^6",
+    "tslib": "^2.0.0",
+    "utility-types": "^3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "aaa.value": {
+    "type": "language",
+    "formula": "bbb.value",
+    "args": ["bbb.value"]
+  },
+  "aaa.label": {
+    "type": "language",
+    "formula": "bbb.value",
+    "args": ["bbb.value"]
+  },
+  "bbb.value": {
+    "type": "language",
+    "formula": "ccc.value",
+    "args": ["ccc.value"]
+  },
+  "aaa.preset.value": {
+    "type": "arithmetic",
+    "formula": "bbb.label + ccc.label",
+    "args": ["bbb.label", "ccc.label"]
+  },
+  "bbb.label": {
+    "type": "arithmetic",
+    "formula": "ccc.value * 9 + 124 + 'xxx'",
+    "args": ["ccc.value"]
+  },
+  "ccc.label": {
+    "type": "arithmetic",
+    "formula": "SUM([1,2,3,4,5,6])"
+  },
+  "ccc.value": {
+    "type": "arithmetic",
+    "formula": "123*321/2-777-18964+111-.5"
+  }
+}
